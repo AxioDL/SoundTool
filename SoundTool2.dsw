@@ -1,0 +1,92 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "diskio"=.\diskio\diskio.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "f5"=.\f5\f5.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mpi_manager"=.\mpimanager\mpi_manager.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name f5
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mud_dll"=.\mud\mud.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name diskio
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name f5
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mpi_manager
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name musyx_io
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "musyx_io"=.\musyx_io\musyx_io.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+
